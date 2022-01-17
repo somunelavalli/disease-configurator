@@ -34,81 +34,297 @@
         <div class="col-12 col-md-3 text-center border border-dark p-5">
           <select name="disease" id="disease" onchange="ShowHideDiv()">
             <option value="select">Select A Disease</option>
-            <option value="covid19">COVID-19/SARS CoV-2</option>
+            <option value="covid19">COVID-19</option>
             <option value="mtb">MTB</option>
-            <option value="restall">Rest All</option>
+            <option value="restall">Dengue</option>
           </select>
         </div>
         <div class="col-12 col-md-8 text-center border border-dark ms-1 p-3">
           <div id="Covid" style="display: none">
             <img src="./covid-19.png" class="mt-2 w-75" />
-            <ul class="mt-3">
-              <li>
-                Truenat (for COVID-19/SARS CoV-2) - Default no. of units (50) w/
-                choice to +/-
-              </li>
-              <li>
-                Truelab - Display all 3 (selectable) with default no. o units
-                (1).+/- option
-              </li>
-              <li>
-                Trueprep Device - default number of units (1), default number is
-                multiples of 2 units when Truelab Quattro is selected. +/-
-                option
-              </li>
-              <li>
-                Trueprep AUTO Sample Prep Universal - Selectable I same no. of
-                units selection in (1) | Toggle select- ability with (6)
-              </li>
-              <li>Truemix - Auto selected</li>
-              <li>
-                STABILYSE - Selectable | same no. of units selection in (1) |
-                Toggle select-ability with (4)
-              </li>
-            </ul>
+            <div class="row mt-3">
+              <h3 class="text-start">
+                <span class="text-danger">True</span>lab
+              </h3>
+              <hr />
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img src="./uno.jpg" class="w-100" />
+                <h6>
+                  Truelab® Uno Dx Real Time Quantitative micro PCR Analyzer
+                </h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img src="./Duo.jpg" class="w-100" />
+                <h6>Truelab® Duo Real Time Quantitative micro PCR Analyzer</h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img src="./Quattro.jpg" class="w-100" />
+                <h6>
+                  Truelab® Quattro Real Time Quantitative micro PCR Analyzer
+                </h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img src="./Printer.jpg" class="w-100" />
+                <h6>Truelab® micro PCR Printer</h6>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <h3 class="text-start">
+                <span class="text-danger">True</span>nat
+              </h3>
+              <hr />
+              <div class="col-12 col-sm-12 col-md-3">
+                <!-- <input type="checkbox" /> -->
+                <img src="./covid-19.png" class="w-100" />
+                <h6>Truenat® COVID-19</h6>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <h3 class="text-start">
+                <span class="text-danger">True</span>prep
+              </h3>
+              <hr />
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img src="./AUTOv2Universal.jpg" class="w-100" />
+                <h6>
+                  Trueprep® AUTO v2 Universal Cartridge Based Sample Prep Device
+                </h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img
+                  src="./AUTO v2 Universal Cartridge Based Sample Prep Kit.png"
+                  class="w-100"
+                />
+                <h6>
+                  Trueprep® AUTO v2 Universal Cartridge Based Sample Prep Kit
+                </h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img
+                  src="./AUTO Universal Sample Pre-treatment Pack.png"
+                  class="w-100"
+                />
+                <h6>Trueprep® AUTO Universal Sample Pre-treatment Pack</h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img
+                  src="./AUTO Transport Medium for Swab Specimen Pack.png"
+                  class="w-100"
+                />
+                <h6>Trueprep® AUTO Transport Medium for Swab Specimen Pack</h6>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <h3 class="text-start">
+                <span class="text-danger">True</span>mix
+              </h3>
+              <hr />
+              <div class="col-12 col-sm-12 col-md-3">
+                <!-- <input type="checkbox" /> -->
+                <img src="./truemixcovid19.jpg" class="w-100" />
+                <h6>Truemix™ COVID -19</h6>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <h3 class="text-start">
+                <span class="text-danger">STABI</span>LYSE
+              </h3>
+              <hr />
+              <div class="col-12 col-sm-12 col-md-3">
+                <!-- <input type="checkbox" /> -->
+                <img src="./stabilyse.jpg" class="w-100" />
+                <h6>STABILYSE® Prep Free</h6>
+              </div>
+            </div>
           </div>
           <div id="mtb" style="display: none">
             <img src="./mtb.png" class="mt-2 w-75" />
-            <ul class="mt-3">
-              <li>
-                Truenat (for MTB) - Default no. of units - 50 w/ choice to +/-
-              </li>
-              <li>
-                Truelab - Display all 3 (selectable) with default no. of units -
-                1.+/- option
-              </li>
-              <li>
-                Trueprep Device - default number of units - 1. default number is
-                multiples of 2 units when Truelab Quattro is selected. +/-
-                option
-              </li>
-              <li>
-                Trueprep AUTO Sample Prep MTB - Selectable same no. of units
-                selection in (1) | Toggle select-ability with (6)
-              </li>
-            </ul>
+            <div class="row mt-3">
+              <h3 class="text-start">
+                <span class="text-danger">True</span>lab
+              </h3>
+              <hr />
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img src="./uno.jpg" class="w-100" />
+                <h6>
+                  Truelab® Uno Dx Real Time Quantitative micro PCR Analyzer
+                </h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img src="./Duo.jpg" class="w-100" />
+                <h6>Truelab® Duo Real Time Quantitative micro PCR Analyzer</h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img src="./Quattro.jpg" class="w-100" />
+                <h6>
+                  Truelab® Quattro Real Time Quantitative micro PCR Analyzer
+                </h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img src="./Printer.jpg" class="w-100" />
+                <h6>Truelab® micro PCR Printer</h6>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <h3 class="text-start">
+                <span class="text-danger">True</span>nat
+              </h3>
+              <hr />
+              <div class="col-12 col-sm-12 col-md-3">
+                <!-- <input type="checkbox" /> -->
+                <input type="checkbox" />
+                <img src="./mtb.png" class="w-100" />
+                <h6>TruTruenat® MTB</h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <!-- <input type="checkbox" /> -->
+                <input type="checkbox" />
+                <img src="./mtbplus.png" class="w-100" />
+                <h6>Truenat® MTB Plus</h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <!-- <input type="checkbox" /> -->
+                <input type="checkbox" />
+                <img src="./mtbrif.png" class="w-100" />
+                <h6>Truenat® MTB-RIF Dx</h6>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <h3 class="text-start">
+                <span class="text-danger">True</span>prep
+              </h3>
+              <hr />
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img src="./AUTOv2Universal.jpg" class="w-100" />
+                <h6>
+                  Trueprep® AUTO v2 Universal Cartridge Based Sample Prep Device
+                </h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img
+                  src="./AUTO v2 Universal Cartridge Based Sample Prep Kit.png"
+                  class="w-100"
+                />
+                <h6>
+                  Trueprep® AUTO v2 Universal Cartridge Based Sample Prep Kit
+                </h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img
+                  src="./AUTO Universal Sample Pre-treatment Pack.png"
+                  class="w-100"
+                />
+                <h6>Trueprep® AUTO Universal Sample Pre-treatment Pack</h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img src="./MTB Sample Pre-treatment Pack.png" class="w-100" />
+                <h6>Trueprep® AUTO MTB Sample Pre-treatment Pack</h6>
+              </div>
+            </div>
           </div>
           <div id="restall" style="display: none">
-            <img src="./mtb.png" class="mt-2 w-75" />
-            <ul class="mt-3">
-              <li>
-                Truenat (for Selected Disease) - Default no. of units (50) w/
-                choice to +/-
-              </li>
-              <li>
-                Truelab - Display all 3 (selectable) with default no. of units
-                (1),+/- option
-              </li>
-              <li>
-                Truepreo Device - default number of units (1). default number is
-                multioles of 2 units when Truelab Quattro is selected. +/-
-                option
-              </li>
-              <li>
-                Trueprep AUTO Sample Preo Universal - Selectable | same no. of
-                units selection in (1)
-              </li>
-            </ul>
+            <img src="./Dengue.png" class="mt-2 w-75" />
+            <div class="row mt-3">
+              <h3 class="text-start">
+                <span class="text-danger">True</span>lab
+              </h3>
+              <hr />
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img src="./uno.jpg" class="w-100" />
+                <h6>
+                  Truelab® Uno Dx Real Time Quantitative micro PCR Analyzer
+                </h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img src="./Duo.jpg" class="w-100" />
+                <h6>Truelab® Duo Real Time Quantitative micro PCR Analyzer</h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img src="./Quattro.jpg" class="w-100" />
+                <h6>
+                  Truelab® Quattro Real Time Quantitative micro PCR Analyzer
+                </h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img src="./Printer.jpg" class="w-100" />
+                <h6>Truelab® micro PCR Printer</h6>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <h3 class="text-start">
+                <span class="text-danger">True</span>nat
+              </h3>
+              <hr />
+              <div class="col-12 col-sm-12 col-md-3">
+                <!-- <input type="checkbox" /> -->
+                <img src="./Dengue.png" class="w-100" />
+                <h6>Truenat® Dengue</h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <!-- <input type="checkbox" /> -->
+                <img src="./dengue-chicke.png" class="w-100" />
+                <h6>Truenat® Dengue/Chikungunya</h6>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <h3 class="text-start">
+                <span class="text-danger">True</span>prep
+              </h3>
+              <hr />
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img src="./AUTOv2Universal.jpg" class="w-100" />
+                <h6>
+                  Trueprep® AUTO v2 Universal Cartridge Based Sample Prep Device
+                </h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img
+                  src="./AUTO v2 Universal Cartridge Based Sample Prep Kit.png"
+                  class="w-100"
+                />
+                <h6>
+                  Trueprep® AUTO v2 Universal Cartridge Based Sample Prep Kit
+                </h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img
+                  src="./AUTO Universal Sample Pre-treatment Pack.png"
+                  class="w-100"
+                />
+                <h6>Trueprep® AUTO Universal Sample Pre-treatment Pack</h6>
+              </div>
+              <div class="col-12 col-sm-12 col-md-3">
+                <input type="checkbox" />
+                <img
+                  src="./AUTO Transport Medium for Swab Specimen Pack.png"
+                  class="w-100"
+                />
+                <h6>Trueprep® AUTO Transport Medium for Swab Specimen Pack</h6>
+              </div>
+            </div>
           </div>
         </div>
       </div>
